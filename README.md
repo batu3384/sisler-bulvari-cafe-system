@@ -1,7 +1,7 @@
 # Sisler Bulvari Cafe System
 
 <p align="center">
-  <img src="docs/assets/hero.svg" alt="Sisler Bulvari Cafe System overview" width="100%">
+  <img src="docs/assets/showcase.png" alt="Sisler Bulvari Cafe System showcase assembled from report screens" width="100%">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 
 Sisler Bulvari Cafe System is a digital ordering and lightweight operations prototype prepared for Sisler Bulvari Sanat Kafe. The project focuses on reducing service friction during busy hours by moving menu browsing and order entry into a digital flow while giving staff a small admin surface for orders and sales views.
 
-This README reflects both the academic report and the current public repository snapshot. The public codebase mainly contains the interface delivery and the MySQL schema, so the scope is described accordingly.
+The opening visual above is assembled from the original report screens so the repository reflects the real interface delivery rather than a placeholder hero.
 
 ## What this repository includes
 
@@ -34,15 +34,11 @@ This README reflects both the academic report and the current public repository 
 - `most-popular.html`: most popular products view
 - `index.html`: home screen shell
 
-<p align="center">
-  <img src="docs/assets/interface-map.svg" alt="Sisler Bulvari Cafe System interface map" width="100%">
-</p>
+## Current repository scope
 
-## Repository reality
-
-- The report describes a wider system vision including Node.js connectivity and routed application flow.
-- The current public repository snapshot primarily contains HTML, CSS, JavaScript pages and the SQL schema.
-- The README therefore positions this repository as a front-end and data-model deliverable for the academic project, not as a fully packaged production stack.
+- The public repository preserves the interface screens and MySQL schema from the original delivery package.
+- It is strongest as a working UI prototype and data-model handoff for the cafe case study.
+- The README stays aligned with that public structure instead of overstating missing packaging work.
 
 ## Why the project was built
 
@@ -52,8 +48,8 @@ The underlying problem was operational congestion during rush hours. Staff had t
 
 - Course: `Bilisim Sistemleri Analizi ve Tasarimi`
 - Project title: `Sisler Bulvari Sanat Kafe Akilli Siparis ve Kafe Yonetimi Sistemi`
+- Project window: `Oct 2024 - Dec 2024`
 - Team members: `Yusuf Yilmaz`, `Batuhan Yuksel`, `Savas Avci`, `Ekin Celik`
-- Delivery year: `2025`
 
 ## Tech stack
 
@@ -102,7 +98,7 @@ mysql -u root -p sisler_cafe < cafe-database-schema.sql
 
 - This repository works best as a product case study and interface delivery for the course project.
 - The public snapshot is strongest on the ordering flow, page structure, and analytics concepts.
-- A future iteration could consolidate the interface into a routed application and reconnect the missing backend pieces referenced in the report.
+- A future iteration could consolidate the interface into a routed application and reconnect the wider application wiring described during the project work.
 
 ## License
 
