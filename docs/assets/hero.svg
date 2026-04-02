@@ -1,0 +1,47 @@
+<svg width="1200" height="640" viewBox="0 0 1200 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="640" rx="32" fill="#201510"/>
+  <rect x="36" y="36" width="1128" height="568" rx="24" fill="url(#panel)"/>
+  <circle cx="1034" cy="154" r="106" fill="#D49C62" opacity="0.12"/>
+  <circle cx="930" cy="500" r="180" fill="#8C5A31" opacity="0.12"/>
+  <rect x="86" y="82" width="250" height="32" rx="16" fill="#4A2E1F"/>
+  <text x="112" y="103" fill="#FFF7ED" font-size="14" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">SISLER BULVARI CAFE SYSTEM</text>
+  <text x="86" y="178" fill="#FFF7ED" font-size="56" font-weight="700" font-family="Georgia, 'Times New Roman', serif">Digital ordering for</text>
+  <text x="86" y="234" fill="#FFF7ED" font-size="56" font-weight="700" font-family="Georgia, 'Times New Roman', serif">a busy cafe floor.</text>
+  <text x="86" y="284" fill="#F4DFCF" font-size="24" font-family="Arial, Helvetica, sans-serif">Menu browsing, order capture, admin review, and sales views</text>
+  <text x="86" y="318" fill="#F4DFCF" font-size="24" font-family="Arial, Helvetica, sans-serif">for the Sisler Bulvari Sanat Kafe workflow.</text>
+
+  <rect x="86" y="382" width="520" height="126" rx="20" fill="#2F1F18" stroke="#7C4F2A"/>
+  <text x="116" y="420" fill="#FFD7B1" font-size="19" font-weight="700" font-family="Arial, Helvetica, sans-serif">Project focus</text>
+  <text x="116" y="455" fill="#FFF7ED" font-size="20" font-family="Arial, Helvetica, sans-serif">Reduce front-of-house congestion during rush hours</text>
+  <text x="116" y="486" fill="#FFF7ED" font-size="20" font-family="Arial, Helvetica, sans-serif">by moving menu access and first-step ordering to a digital flow.</text>
+
+  <rect x="702" y="96" width="390" height="164" rx="22" fill="#FFF8F2"/>
+  <text x="732" y="136" fill="#7C4F2A" font-size="18" font-weight="700" font-family="Arial, Helvetica, sans-serif">Repository snapshot</text>
+  <text x="732" y="176" fill="#201510" font-size="40" font-weight="700" font-family="Georgia, 'Times New Roman', serif">Front-end delivery</text>
+  <text x="732" y="214" fill="#5A463A" font-size="20" font-family="Arial, Helvetica, sans-serif">HTML, CSS, JavaScript pages and the MySQL schema</text>
+  <text x="732" y="242" fill="#5A463A" font-size="20" font-family="Arial, Helvetica, sans-serif">from the original course project handoff.</text>
+
+  <rect x="702" y="292" width="184" height="124" rx="20" fill="#3C261B"/>
+  <text x="728" y="328" fill="#FFD7B1" font-size="16" font-weight="700" font-family="Arial, Helvetica, sans-serif">Customer lane</text>
+  <text x="728" y="362" fill="#FFF7ED" font-size="28" font-weight="700" font-family="Georgia, 'Times New Roman', serif">Order screen</text>
+  <text x="728" y="392" fill="#F4DFCF" font-size="18" font-family="Arial, Helvetica, sans-serif">Table number</text>
+  <text x="728" y="414" fill="#F4DFCF" font-size="18" font-family="Arial, Helvetica, sans-serif">menu and basket</text>
+
+  <rect x="908" y="292" width="184" height="124" rx="20" fill="#3C261B"/>
+  <text x="934" y="328" fill="#FFD7B1" font-size="16" font-weight="700" font-family="Arial, Helvetica, sans-serif">Admin lane</text>
+  <text x="934" y="362" fill="#FFF7ED" font-size="28" font-weight="700" font-family="Georgia, 'Times New Roman', serif">Orders and stats</text>
+  <text x="934" y="392" fill="#F4DFCF" font-size="18" font-family="Arial, Helvetica, sans-serif">Daily, monthly,</text>
+  <text x="934" y="414" fill="#F4DFCF" font-size="18" font-family="Arial, Helvetica, sans-serif">popular products</text>
+
+  <rect x="702" y="444" width="390" height="104" rx="20" fill="#FFF8F2"/>
+  <text x="732" y="480" fill="#7C4F2A" font-size="18" font-weight="700" font-family="Arial, Helvetica, sans-serif">Academic delivery</text>
+  <text x="732" y="513" fill="#5A463A" font-size="20" font-family="Arial, Helvetica, sans-serif">Built for the Sisler Bulvari Sanat Kafe case study in the</text>
+  <text x="732" y="539" fill="#5A463A" font-size="20" font-family="Arial, Helvetica, sans-serif">systems analysis and design course project.</text>
+
+  <defs>
+    <linearGradient id="panel" x1="36" y1="36" x2="1164" y2="604" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#291A14"/>
+      <stop offset="1" stop-color="#4D2C20"/>
+    </linearGradient>
+  </defs>
+</svg>
