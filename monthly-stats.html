@@ -22,20 +22,26 @@
             </nav>
 
             <main class="col-md-10 content">
-                <div class="mb-4">
-                    <h3 class="mb-2">Aylık İstatistikler</h3>
-                    <p class="text-muted mb-0">
+                <header class="page-header">
+                    <span class="eyebrow">Raporlama</span>
+                    <h3>Aylık İstatistikler</h3>
+                    <p class="helper-text">
                         Ekim-Aralık 2024 döneminde sipariş hacmi ve gelir eğilimini örnekleyen aylık görünüm.
                     </p>
+                </header>
+
+                <div class="info-strip">
+                    <span class="info-chip">Dönem: Ekim 2024 - Aralık 2024</span>
+                    <span class="info-chip">Gösterim: toplam kazanç</span>
                 </div>
 
-                <div class="card shadow-sm border-0">
-                    <div class="card-body">
-                        <div style="height: 360px;">
+                <section class="surface-panel">
+                    <div class="panel-body">
+                        <div class="chart-shell">
                             <canvas id="monthlyStatsChart"></canvas>
                         </div>
                     </div>
-                </div>
+                </section>
             </main>
         </div>
     </div>

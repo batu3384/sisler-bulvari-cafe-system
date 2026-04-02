@@ -21,85 +21,78 @@
             </nav>
 
             <main class="col-md-10 content">
-                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
-                    <div>
-                        <p class="text-uppercase text-muted fw-semibold mb-2">Operasyon Özeti</p>
-                        <h2 class="mb-2">Kafe yönetim prototipi ana ekranı</h2>
-                        <p class="text-muted mb-0">
-                            Bu yüzey, sipariş akışı, menü erişimi ve temel satış ekranlarını tek panelden
-                            görünür kılmak için hazırlanmış statik proje teslimidir.
-                        </p>
-                    </div>
-                    <div class="d-flex gap-2 flex-wrap">
+                <header class="page-header">
+                    <span class="eyebrow">Yönetim Paneli</span>
+                    <h2>Kafe yönetim prototipi</h2>
+                    <p class="helper-text">
+                        Bu ana sayfa, proje tesliminde yer alan sipariş, menü ve temel raporlama yüzeylerini
+                        tek yerden göstermek için sade tutulmuş bir yönetim özeti ekranıdır.
+                    </p>
+                    <div class="toolbar">
                         <a class="btn btn-primary" href="orders.html">Siparişleri Gör</a>
                         <a class="btn btn-outline-primary" href="order-screen.html">Masa Sipariş Ekranı</a>
                     </div>
-                </div>
+                </header>
 
-                <div class="row g-3 mb-4">
-                    <div class="col-md-4">
-                        <div class="card h-100 shadow-sm border-0">
-                            <div class="card-body">
-                                <h5 class="card-title">Sipariş Akışı</h5>
-                                <p class="card-text text-muted">
-                                    Masa siparişi, giriş ekranı ve admin sipariş görünümü aynı proje paketi içinde sunulur.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card h-100 shadow-sm border-0">
-                            <div class="card-body">
-                                <h5 class="card-title">Yönetim Görünümleri</h5>
-                                <p class="card-text text-muted">
-                                    Günlük, aylık ve popüler ürün ekranları işletme sahibine özet bilgi sağlar.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card h-100 shadow-sm border-0">
-                            <div class="card-body">
-                                <h5 class="card-title">Teslim Kapsamı</h5>
-                                <p class="card-text text-muted">
-                                    Repo, HTML arayüzleri ve MySQL şemasını içeren ders projesi snapshot'ı olarak korunur.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <section class="summary-grid">
+                    <article class="summary-card">
+                        <strong>7</strong>
+                        <span>Arayüz dosyası</span>
+                        <p>Admin, menü, sipariş ve raporlama yüzeyleri tek teslim paketi içinde yer alır.</p>
+                    </article>
+                    <article class="summary-card">
+                        <strong>3</strong>
+                        <span>Rapor ekranı</span>
+                        <p>Günlük satış, aylık eğilim ve popüler ürün görünümü ayrı sayfalarda sunulur.</p>
+                    </article>
+                    <article class="summary-card">
+                        <strong>1</strong>
+                        <span>Masa sipariş akışı</span>
+                        <p>Müşteri tarafı sipariş ekranı, admin yüzeyinden bağımsız olarak ayrıca korunur.</p>
+                    </article>
+                </section>
 
-                <div class="card shadow-sm border-0">
-                    <div class="card-body">
-                        <h5 class="card-title mb-3">Hızlı Erişim</h5>
-                        <div class="row g-3">
-                            <div class="col-md-4">
-                                <a class="text-decoration-none" href="menu.html">
-                                    <div class="p-3 rounded bg-light h-100">
-                                        <strong>Menü vitrini</strong>
-                                        <p class="text-muted mb-0 mt-2">Ürün kategorilerini ve fiyatları müşteriye yönelik akışta gösterir.</p>
-                                    </div>
+                <section class="section-grid">
+                    <article class="surface-panel">
+                        <div class="panel-body">
+                            <h3 class="section-title">Bu pakette ne var?</h3>
+                            <ul class="plain-list">
+                                <li>
+                                    Menü ve masa sipariş ekranı
+                                    <small>Müşteriye dönük sipariş deneyimini gösteren statik HTML yüzeyleri.</small>
+                                </li>
+                                <li>
+                                    Sipariş ve raporlama görünümü
+                                    <small>İşletme tarafında günlük takip için örnek tablo ve grafik ekranları.</small>
+                                </li>
+                                <li>
+                                    Ders teslimi snapshot'ı
+                                    <small>Repo, projenin o dönemki arayüz ve veritabanı şemasını korunmuş halde tutar.</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="surface-panel">
+                        <div class="panel-body">
+                            <h3 class="section-title">Hızlı erişim</h3>
+                            <div class="link-list">
+                                <a class="link-card" href="menu.html">
+                                    <strong>Menü sayfası</strong>
+                                    <p>Kategori bazlı ürün listesini ve fiyatları müşteri tarafında gösterir.</p>
                                 </a>
-                            </div>
-                            <div class="col-md-4">
-                                <a class="text-decoration-none" href="orders.html">
-                                    <div class="p-3 rounded bg-light h-100">
-                                        <strong>Sipariş listesi</strong>
-                                        <p class="text-muted mb-0 mt-2">Admin panelinde aktif sipariş örneklerini ve masa durumlarını özetler.</p>
-                                    </div>
+                                <a class="link-card" href="orders.html">
+                                    <strong>Sipariş listesi</strong>
+                                    <p>Örnek masa siparişleri ve durum etiketlerini yönetim görünümünde toplar.</p>
                                 </a>
-                            </div>
-                            <div class="col-md-4">
-                                <a class="text-decoration-none" href="monthly-stats.html">
-                                    <div class="p-3 rounded bg-light h-100">
-                                        <strong>Aylık görünüm</strong>
-                                        <p class="text-muted mb-0 mt-2">Gelir eğilimi ve örnek performans grafiğini sunar.</p>
-                                    </div>
+                                <a class="link-card" href="monthly-stats.html">
+                                    <strong>Aylık rapor</strong>
+                                    <p>Ekim-Aralık 2024 dönemine ait örnek gelir eğilimini çizgi grafikle verir.</p>
                                 </a>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </article>
+                </section>
             </main>
         </div>
     </div>

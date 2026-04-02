@@ -6,60 +6,97 @@
     <title>Sisler Bulvarı Cafe - Menü</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        :root {
+            --panel-border: #d9e0ea;
+            --panel-shadow: 0 12px 28px rgba(14, 36, 58, 0.08);
+            --accent: #1e88e5;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Segoe UI", "Helvetica Neue", sans-serif;
             margin: 0;
-            background-color: #f2f2f2;
-            color: #333;
+            background-color: #f4f6f9;
+            color: #243447;
         }
 
         .menu-shell {
-            max-width: 1200px;
+            max-width: 1180px;
             margin: 0 auto;
-            padding: 32px 20px 48px;
+            padding: 28px 18px 42px;
         }
 
         .menu-hero {
             background: #fff;
-            border-radius: 16px;
-            padding: 28px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-            margin-bottom: 24px;
+            border: 1px solid var(--panel-border);
+            border-radius: 14px;
+            padding: 24px;
+            box-shadow: var(--panel-shadow);
+            margin-bottom: 18px;
         }
 
         .menu-hero h1 {
-            margin-bottom: 12px;
-            color: #555;
+            margin: 0 0 10px;
+            color: #17324d;
+        }
+
+        .menu-hero p {
+            margin: 0;
+            max-width: 720px;
+            line-height: 1.6;
+            color: #667788;
+        }
+
+        .menu-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .menu-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 16px;
         }
 
         .menu-card {
             background: #fff;
+            border: 1px solid var(--panel-border);
             border-radius: 14px;
             padding: 20px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            box-shadow: var(--panel-shadow);
         }
 
         .menu-card h2 {
-            font-size: 1.2rem;
-            color: #007bff;
-            margin-bottom: 12px;
-            border-bottom: 2px solid #007bff;
+            font-size: 1.15rem;
+            color: var(--accent);
+            margin: 0 0 14px;
+            border-bottom: 2px solid var(--accent);
             padding-bottom: 8px;
         }
 
-        .menu-card ul {
-            padding-left: 18px;
-            margin-bottom: 0;
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            gap: 18px;
+            padding: 9px 0;
+            border-bottom: 1px solid #edf1f5;
         }
 
-        .menu-card li + li {
-            margin-top: 8px;
+        .menu-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .menu-item span:last-child {
+            font-weight: 600;
+            color: #17324d;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -68,87 +105,75 @@
         <section class="menu-hero">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3">
                 <div>
-                    <h1>Sisler Bulvarı Kafe Menüsü</h1>
-                    <p class="text-muted mb-0">
-                        Proje tesliminde yer alan ürün kategorilerini müşteriye yönelik sade bir katalog yüzeyinde gösterir.
+                    <h1>Sisler Bulvarı Cafe Menüsü</h1>
+                    <p>
+                        Bu sayfa, proje tesliminde yer alan ürün kategorilerini müşteriye dönük sade bir
+                        menü yüzeyinde göstermesi için hazırlanmıştır.
                     </p>
                 </div>
-                <a class="btn btn-primary" href="order-screen.html">Tam sipariş ekranını aç</a>
+                <div class="menu-toolbar">
+                    <a class="btn btn-outline-primary" href="index.html">Yönetim Paneline Dön</a>
+                    <a class="btn btn-primary" href="order-screen.html">Masa Sipariş Ekranı</a>
+                </div>
             </div>
         </section>
 
         <div class="menu-grid">
             <article class="menu-card">
                 <h2>Kahvaltılar</h2>
-                <ul>
-                    <li>Serpme Kahvaltı - 675 ₺</li>
-                    <li>Tek Kişilik Kahvaltı Tabağı - 365 ₺</li>
-                    <li>Sucuklu Yumurta - 140 ₺</li>
-                    <li>Menemen - 170 ₺</li>
-                </ul>
+                <div class="menu-item"><span>Serpme Kahvaltı</span><span>675 ₺</span></div>
+                <div class="menu-item"><span>Tek Kişilik Kahvaltı Tabağı</span><span>365 ₺</span></div>
+                <div class="menu-item"><span>Sucuklu Yumurta</span><span>140 ₺</span></div>
+                <div class="menu-item"><span>Menemen</span><span>170 ₺</span></div>
             </article>
             <article class="menu-card">
                 <h2>Atıştırmalıklar</h2>
-                <ul>
-                    <li>Patates Tabağı - 115 ₺</li>
-                    <li>Şişler Atıştırmalık Tabağı - 180 ₺</li>
-                    <li>Paçanga Böreği - 190 ₺</li>
-                    <li>Tortilla - 200 ₺</li>
-                </ul>
+                <div class="menu-item"><span>Patates Tabağı</span><span>115 ₺</span></div>
+                <div class="menu-item"><span>Sisler Atıştırmalık Tabağı</span><span>180 ₺</span></div>
+                <div class="menu-item"><span>Paçanga Böreği</span><span>190 ₺</span></div>
+                <div class="menu-item"><span>Tortilla</span><span>200 ₺</span></div>
             </article>
             <article class="menu-card">
                 <h2>Gözlemeler</h2>
-                <ul>
-                    <li>Beyaz Peynirli Gözleme - 170 ₺</li>
-                    <li>Kaşar Peynirli Gözleme - 170 ₺</li>
-                    <li>Karışık Gözleme - 195 ₺</li>
-                    <li>Kavurmalı Gözleme - 210 ₺</li>
-                </ul>
+                <div class="menu-item"><span>Beyaz Peynirli Gözleme</span><span>170 ₺</span></div>
+                <div class="menu-item"><span>Kaşar Peynirli Gözleme</span><span>170 ₺</span></div>
+                <div class="menu-item"><span>Karışık Gözleme</span><span>195 ₺</span></div>
+                <div class="menu-item"><span>Kavurmalı Gözleme</span><span>210 ₺</span></div>
             </article>
             <article class="menu-card">
                 <h2>Tost ve Sandviçler</h2>
-                <ul>
-                    <li>Kaşarlı Tost - 115 ₺</li>
-                    <li>Karışık Tost - 135 ₺</li>
-                    <li>Ton Balıklı Sandviç - 160 ₺</li>
-                    <li>Şişler Bulvarı Spesyal Tost - 210 ₺</li>
-                </ul>
+                <div class="menu-item"><span>Kaşarlı Tost</span><span>115 ₺</span></div>
+                <div class="menu-item"><span>Karışık Tost</span><span>135 ₺</span></div>
+                <div class="menu-item"><span>Ton Balıklı Sandviç</span><span>160 ₺</span></div>
+                <div class="menu-item"><span>Sisler Bulvarı Spesyal Tost</span><span>210 ₺</span></div>
             </article>
             <article class="menu-card">
                 <h2>Makarnalar ve Tavuklar</h2>
-                <ul>
-                    <li>Mantı - 220 ₺</li>
-                    <li>Krema Soslu Penne - 230 ₺</li>
-                    <li>Köri Soslu Tavuk - 250 ₺</li>
-                    <li>Tikka Masala Soslu Tavuk - 265 ₺</li>
-                </ul>
+                <div class="menu-item"><span>Mantı</span><span>220 ₺</span></div>
+                <div class="menu-item"><span>Krema Soslu Penne</span><span>230 ₺</span></div>
+                <div class="menu-item"><span>Köri Soslu Tavuk</span><span>250 ₺</span></div>
+                <div class="menu-item"><span>Tikka Masala Soslu Tavuk</span><span>265 ₺</span></div>
             </article>
             <article class="menu-card">
                 <h2>Tatlılar</h2>
-                <ul>
-                    <li>Mozaik Pasta - 160 ₺</li>
-                    <li>Tiramisu - 170 ₺</li>
-                    <li>Magnolia - 160 ₺</li>
-                    <li>Sufle - 180 ₺</li>
-                </ul>
+                <div class="menu-item"><span>Mozaik Pasta</span><span>160 ₺</span></div>
+                <div class="menu-item"><span>Tiramisu</span><span>170 ₺</span></div>
+                <div class="menu-item"><span>Magnolia</span><span>160 ₺</span></div>
+                <div class="menu-item"><span>Sufle</span><span>180 ₺</span></div>
             </article>
             <article class="menu-card">
                 <h2>Sıcak İçecekler</h2>
-                <ul>
-                    <li>Çay - 25 ₺</li>
-                    <li>Türk Kahvesi - 75 ₺</li>
-                    <li>Salep - 95 ₺</li>
-                    <li>Pumpkin Latte - 100 ₺</li>
-                </ul>
+                <div class="menu-item"><span>Çay</span><span>25 ₺</span></div>
+                <div class="menu-item"><span>Türk Kahvesi</span><span>75 ₺</span></div>
+                <div class="menu-item"><span>Salep</span><span>95 ₺</span></div>
+                <div class="menu-item"><span>Pumpkin Latte</span><span>100 ₺</span></div>
             </article>
             <article class="menu-card">
                 <h2>Soğuk İçecekler</h2>
-                <ul>
-                    <li>Cold Brew - 125 ₺</li>
-                    <li>Limonata - 95 ₺</li>
-                    <li>Çilekli Milkshake - 110 ₺</li>
-                    <li>Blue Lagoon - 105 ₺</li>
-                </ul>
+                <div class="menu-item"><span>Cold Brew</span><span>125 ₺</span></div>
+                <div class="menu-item"><span>Limonata</span><span>95 ₺</span></div>
+                <div class="menu-item"><span>Çilekli Milkshake</span><span>110 ₺</span></div>
+                <div class="menu-item"><span>Blue Lagoon</span><span>105 ₺</span></div>
             </article>
         </div>
     </div>

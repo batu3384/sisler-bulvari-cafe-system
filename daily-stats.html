@@ -22,20 +22,26 @@
             </nav>
 
             <main class="col-md-10 content">
-                <div class="mb-4">
-                    <h3 class="mb-2">Günlük İstatistikler</h3>
-                    <p class="text-muted mb-0">
-                        Gün içindeki ürün bazlı hareketi hızlıca göstermek için hazırlanmış örnek günlük satış görünümü.
+                <header class="page-header">
+                    <span class="eyebrow">Raporlama</span>
+                    <h3>Günlük İstatistikler</h3>
+                    <p class="helper-text">
+                        Gün içindeki ürün bazlı hareketi hızlıca görmek için hazırlanmış örnek günlük satış görünümü.
                     </p>
+                </header>
+
+                <div class="info-strip">
+                    <span class="info-chip">En çok satılan: Türk Kahvesi</span>
+                    <span class="info-chip">Takip türü: ürün bazlı adet</span>
                 </div>
 
-                <div class="card shadow-sm border-0">
-                    <div class="card-body">
-                        <div style="height: 360px;">
+                <section class="surface-panel">
+                    <div class="panel-body">
+                        <div class="chart-shell">
                             <canvas id="dailyStatsChart"></canvas>
                         </div>
                     </div>
-                </div>
+                </section>
             </main>
         </div>
     </div>

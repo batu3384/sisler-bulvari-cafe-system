@@ -21,59 +21,81 @@
             </nav>
 
             <main class="col-md-10 content">
-                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
-                    <div>
-                        <h3 class="mb-2">Siparişler</h3>
-                        <p class="text-muted mb-0">
-                            Bu ekran, proje tesliminde öngörülen sipariş takibi görünümünü örnek masa ve durum verileriyle gösterir.
-                        </p>
-                    </div>
-                    <a class="btn btn-outline-primary" href="order-screen.html">Müşteri sipariş ekranını aç</a>
+                <header class="page-header">
+                    <span class="eyebrow">Sipariş Yönetimi</span>
+                    <h3>Siparişler</h3>
+                    <p class="helper-text">
+                        Bu ekran, proje tesliminde öngörülen sipariş takip mantığını örnek masa verileriyle
+                        görünür kılan basit yönetim tablosudur.
+                    </p>
+                </header>
+
+                <div class="info-strip">
+                    <span class="info-chip">4 aktif sipariş</span>
+                    <span class="info-chip">2 sipariş hazırlık aşamasında</span>
+                    <span class="info-chip">1 sipariş hazırlandı</span>
                 </div>
 
-                <div class="table-responsive">
-                    <table class="table table-striped align-middle mb-0">
-                        <thead>
-                            <tr>
-                                <th>Sipariş No</th>
-                                <th>Masa</th>
-                                <th>İçerik</th>
-                                <th>Toplam</th>
-                                <th>Durum</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>SB-104</td>
-                                <td>12</td>
-                                <td>2x Türk Kahvesi, 1x Magnolia</td>
-                                <td>310 ₺</td>
-                                <td><span class="badge text-bg-warning">Hazırlanıyor</span></td>
-                            </tr>
-                            <tr>
-                                <td>SB-105</td>
-                                <td>6</td>
-                                <td>1x Serpme Kahvaltı, 2x Çay</td>
-                                <td>725 ₺</td>
-                                <td><span class="badge text-bg-primary">Mutfakta</span></td>
-                            </tr>
-                            <tr>
-                                <td>SB-106</td>
-                                <td>3</td>
-                                <td>1x Karışık Tost, 1x Limonata</td>
-                                <td>230 ₺</td>
-                                <td><span class="badge text-bg-success">Hazırlandı</span></td>
-                            </tr>
-                            <tr>
-                                <td>SB-107</td>
-                                <td>15</td>
-                                <td>2x Cold Brew, 1x Sufle</td>
-                                <td>430 ₺</td>
-                                <td><span class="badge text-bg-secondary">Onay Bekliyor</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <section class="two-column">
+                    <div class="table-responsive">
+                        <table class="table table-striped align-middle mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Sipariş No</th>
+                                    <th>Masa</th>
+                                    <th>İçerik</th>
+                                    <th>Toplam</th>
+                                    <th>Durum</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SB-104</td>
+                                    <td>12</td>
+                                    <td>2x Türk Kahvesi, 1x Magnolia</td>
+                                    <td>310 ₺</td>
+                                    <td><span class="badge text-bg-warning">Hazırlanıyor</span></td>
+                                </tr>
+                                <tr>
+                                    <td>SB-105</td>
+                                    <td>6</td>
+                                    <td>1x Serpme Kahvaltı, 2x Çay</td>
+                                    <td>725 ₺</td>
+                                    <td><span class="badge text-bg-primary">Mutfakta</span></td>
+                                </tr>
+                                <tr>
+                                    <td>SB-106</td>
+                                    <td>3</td>
+                                    <td>1x Karışık Tost, 1x Limonata</td>
+                                    <td>230 ₺</td>
+                                    <td><span class="badge text-bg-success">Hazırlandı</span></td>
+                                </tr>
+                                <tr>
+                                    <td>SB-107</td>
+                                    <td>15</td>
+                                    <td>2x Cold Brew, 1x Sufle</td>
+                                    <td>430 ₺</td>
+                                    <td><span class="badge text-bg-secondary">Onay Bekliyor</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <aside class="surface-panel">
+                        <div class="panel-body">
+                            <h4 class="section-title">Ekran notu</h4>
+                            <div class="simple-note">
+                                Bu yüzey, canlı sipariş senkronizasyonu yapan bir admin panelinden çok,
+                                ders projesindeki sipariş takibi fikrini göstermek için hazırlanmış örnek
+                                bir masa ve durum tablosudur.
+                            </div>
+                            <div class="toolbar">
+                                <a class="btn btn-outline-primary" href="order-screen.html">Masa Sipariş Ekranı</a>
+                                <a class="btn btn-outline-secondary" href="daily-stats.html">Günlük Rapor</a>
+                            </div>
+                        </div>
+                    </aside>
+                </section>
             </main>
         </div>
     </div>
