@@ -1,1 +1,81 @@
-<!DOCTYPE html><html lang="tr"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Sipariş Oluştur</title>    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">    <link rel="stylesheet" href="css/style.css"></head><body>    <div class="container-fluid">        <div class="row">            <!-- Sidebar -->            <nav class="col-md-2 sidebar">                <h5 class="text-center">Sisler Bulvarı Cafe</h5>                <a href="index.html">Anasayfa</a>                <a href="menu.html">Menü</a>                <a href="siparisler.html" class="active">Siparişler</a>                <a href="gunluk-istatistikler.html">Günlük İstatistikler</a>                <a href="aylik-istatistikler.html">Aylık İstatistikler</a>                <a href="en-begenilenler.html">En Beğenilenler</a>            </nav>            <!-- Content -->            <main class="col-md-10 content">                <h3>Siparişler</h3>                            </main>        </div>    </div></body></html> 
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisler Bulvarı Cafe - Siparişler</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 sidebar">
+                <h5 class="text-center">Sisler Bulvarı Cafe</h5>
+                <a href="index.html">Anasayfa</a>
+                <a href="menu.html">Menü</a>
+                <a href="orders.html" class="active">Siparişler</a>
+                <a href="daily-stats.html">Günlük İstatistikler</a>
+                <a href="monthly-stats.html">Aylık İstatistikler</a>
+                <a href="most-popular.html">En Beğenilenler</a>
+            </nav>
+
+            <main class="col-md-10 content">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
+                    <div>
+                        <h3 class="mb-2">Siparişler</h3>
+                        <p class="text-muted mb-0">
+                            Bu ekran, proje tesliminde öngörülen sipariş takibi görünümünü örnek masa ve durum verileriyle gösterir.
+                        </p>
+                    </div>
+                    <a class="btn btn-outline-primary" href="order-screen.html">Müşteri sipariş ekranını aç</a>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-striped align-middle mb-0">
+                        <thead>
+                            <tr>
+                                <th>Sipariş No</th>
+                                <th>Masa</th>
+                                <th>İçerik</th>
+                                <th>Toplam</th>
+                                <th>Durum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SB-104</td>
+                                <td>12</td>
+                                <td>2x Türk Kahvesi, 1x Magnolia</td>
+                                <td>310 ₺</td>
+                                <td><span class="badge text-bg-warning">Hazırlanıyor</span></td>
+                            </tr>
+                            <tr>
+                                <td>SB-105</td>
+                                <td>6</td>
+                                <td>1x Serpme Kahvaltı, 2x Çay</td>
+                                <td>725 ₺</td>
+                                <td><span class="badge text-bg-primary">Mutfakta</span></td>
+                            </tr>
+                            <tr>
+                                <td>SB-106</td>
+                                <td>3</td>
+                                <td>1x Karışık Tost, 1x Limonata</td>
+                                <td>230 ₺</td>
+                                <td><span class="badge text-bg-success">Hazırlandı</span></td>
+                            </tr>
+                            <tr>
+                                <td>SB-107</td>
+                                <td>15</td>
+                                <td>2x Cold Brew, 1x Sufle</td>
+                                <td>430 ₺</td>
+                                <td><span class="badge text-bg-secondary">Onay Bekliyor</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

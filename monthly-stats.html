@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aylık İstatistikler</title>
+    <title>Sisler Bulvarı Cafe - Aylık İstatistikler</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -11,41 +11,59 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <!-- Sidebar -->
             <nav class="col-md-2 sidebar">
                 <h5 class="text-center">Sisler Bulvarı Cafe</h5>
                 <a href="index.html">Anasayfa</a>
                 <a href="menu.html">Menü</a>
-                <a href="siparisler.html">Siparişler</a>
-                <a href="gunluk-istatistikler.html">Günlük İstatistikler</a>
-                <a href="aylik-istatistikler.html" class="active">Aylık İstatistikler</a>
-                <a href="en-begenilenler.html">En Beğenilenler</a>
+                <a href="orders.html">Siparişler</a>
+                <a href="daily-stats.html">Günlük İstatistikler</a>
+                <a href="monthly-stats.html" class="active">Aylık İstatistikler</a>
+                <a href="most-popular.html">En Beğenilenler</a>
             </nav>
 
-            <!-- Content -->
             <main class="col-md-10 content">
-                <h3>Aylık İstatistikler</h3>
-                <canvas id="monthlyStatsChart"></canvas>
+                <div class="mb-4">
+                    <h3 class="mb-2">Aylık İstatistikler</h3>
+                    <p class="text-muted mb-0">
+                        Ekim-Aralık 2024 döneminde sipariş hacmi ve gelir eğilimini örnekleyen aylık görünüm.
+                    </p>
+                </div>
+
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <div style="height: 360px;">
+                            <canvas id="monthlyStatsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     </div>
 
     <script>
-        // Aylık İstatistikler Grafiği
-        const monthlyCtx = document.getElementById('monthlyStatsChart').getContext('2d');
+        const monthlyCtx = document.getElementById("monthlyStatsChart").getContext("2d");
         new Chart(monthlyCtx, {
-            type: 'line',
+            type: "line",
             data: {
-                labels: ['Ocak', 'Şubat', 'Mart'],
+                labels: ["Ekim", "Kasım", "Aralık"],
                 datasets: [{
-                    label: 'Toplam Kazanç',
-                    data: [3000, 4000, 5000],
-                    borderColor: 'rgba(153, 102, 255, 1)',
-                    borderWidth: 2
+                    label: "Toplam Kazanç",
+                    data: [148000, 172500, 194300],
+                    borderColor: "rgba(46, 125, 50, 1)",
+                    backgroundColor: "rgba(46, 125, 50, 0.12)",
+                    fill: true,
+                    tension: 0.32,
+                    borderWidth: 2.5
                 }]
             },
             options: {
-                responsive: true
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: false
+                    }
+                }
             }
         });
     </script>
